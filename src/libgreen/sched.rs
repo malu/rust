@@ -969,7 +969,7 @@ fn new_sched_rng() -> XorShiftRng {
     match XorShiftRng::new() {
         Ok(r) => r,
         Err(e) => {
-            rtabort!("sched: failed to create seeded RNG")
+            rtabort!("sched: failed to create seeded RNG: {}", e)
         }
     }
 }
