@@ -60,7 +60,7 @@ mod imp {
 mod imp {
     use Rng;
     use std::cast;
-    use std::io::IoResult;
+    use std::io::{IoResult, IoError};
     use std::libc::{c_ulong, DWORD, BYTE, LPCSTR, BOOL};
     use std::os;
     use std::rt::stack;
