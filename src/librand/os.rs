@@ -143,7 +143,7 @@ mod imp {
             }
 
             if ret == 0 {
-                Err(IoResult::last_error())
+                Err(IoError::last_error())
             } else {
                 Ok(OSRng { hcryptprov: hcp })
             }
